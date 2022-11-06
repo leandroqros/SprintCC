@@ -46,16 +46,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Form4.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioPrincipal.Designer.cs">
+      <DependentUpon>FormularioPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FormularioPrincipal.resx">
+      <DependentUpon>FormularioPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -80,13 +86,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\bibliotecadeclase\BibliotecaDeClasses.csproj">
-      <Project>{015837A6-6B96-462E-97E8-95BD53B0E5D7}</Project>
-      <Name>BibliotecaDeClasses</Name>
+    <ProjectReference Include="..\bdcwf\bdcwf.csproj">
+      <Project>{08c601a1-1f49-454c-b0cb-3b25428a197c}</Project>
+      <Name>bdcwf</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CustomControls\BibliotecaCustomControls.csproj">
-      <Project>{C562A95D-444E-4B92-BBCA-E186F317CC54}</Project>
-      <Name>BibliotecaCustomControls</Name>
+    <ProjectReference Include="..\bdc\bdc.csproj">
+      <Project>{175479ad-2a31-4ff9-babe-f5048d0a8494}</Project>
+      <Name>bdc</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -4,11 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{015837A6-6B96-462E-97E8-95BD53B0E5D7}</ProjectGuid>
+    <ProjectGuid>{08C601A1-1F49-454C-B0CB-3B25428A197C}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>bibliotecadeclase</RootNamespace>
-    <AssemblyName>bibliotecadeclase</AssemblyName>
+    <RootNamespace>bdcwf</RootNamespace>
+    <AssemblyName>bdcwf</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -33,25 +32,59 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SelectorDeForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectorDeForm.Designer.cs">
+      <DependentUpon>SelectorDeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SWCodi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SWCodi.Designer.cs">
+      <DependentUpon>SWCodi.cs</DependentUpon>
+    </Compile>
     <Compile Include="SWTextbox.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectorDeForm.resx">
+      <DependentUpon>SelectorDeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SWCodi.resx">
+      <DependentUpon>SWCodi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SWTextbox.resx">
       <DependentUpon>SWTextbox.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\starwars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\starwars1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
