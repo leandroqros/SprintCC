@@ -4,31 +4,44 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Reflection;
 
 namespace bibliotecadeclase
 {
+    /// <summary>
+    /// Control heredado de un CustomControl
+    /// </summary>
+    /// <param name="SelectorDeForm : UserControl"> Comando para heredar propiedades de UserControl</param>
+    /// <example> MiCustomTextBox : Textbox </example>
     public partial class SelectorDeForm : UserControl
     {
         public SelectorDeForm()
         {
             InitializeComponent();
         }
+        /// <summary>
+        /// Propiedad donde aplicamos la Clase
+        /// </summary>
         public string Classe
         {
             get;
             set;
         }
 
+        /// <summary>
+        /// Propiedad donde aplicamos el nombre del Formulario
+        /// </summary>
         public string NombreFormulario
         {
             get;
             set;
         }
-
+        /// <summary>
+        /// Propiedad donde aplicamos la descripcion del Formulario
+        /// </summary>
         public string Descripcion
         {
             get;
