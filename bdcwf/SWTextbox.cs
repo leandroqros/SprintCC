@@ -57,17 +57,17 @@ namespace BibliotecaDeClasses
         }
 
         //Booleanas
-        private bool campoVacio
+        public bool CampoVacio
         {
             get;
             set;
         }
-        private bool esForanea
+        public bool EsForanea
         {
             get;
             set;
         }
-        public string nombreControl
+        public string NombreControl
         {
             get;
             set;
@@ -75,7 +75,7 @@ namespace BibliotecaDeClasses
 
         private void SWTextbox_dobleclick(object sender, EventArgs e)
         {
-            if (esForanea)
+            if (EsForanea)
             {
                 MessageBox.Show("Clave foranea");
             }
@@ -88,7 +88,7 @@ namespace BibliotecaDeClasses
             Regex rgxCodigo = new Regex(@"^[^AEIOU]{4}\-\d{3}\/[13579][AEIOU]$");
             bool correcto;
 
-            if (campoVacio && this.Text.Length == 0)
+            if (CampoVacio && this.Text.Length == 0)
             {
                 MessageBox.Show("Ese campo no puede estar vacio");
                 this.Focus();
@@ -133,7 +133,7 @@ namespace BibliotecaDeClasses
             {
                 foreach (Control item in frmUno.Controls)
                 {
-                    if (item.Name.Equals(nombreControl))
+                    if (item.Name.Equals(NombreControl))
                     {
                         item.Text = this.Text;
                     }

@@ -72,5 +72,11 @@
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\bdcwf\bdcwf.csproj">
+      <Project>{08C601A1-1F49-454C-B0CB-3B25428A197C}</Project>
+      <Name>bdcwf</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
