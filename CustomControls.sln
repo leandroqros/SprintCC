@@ -3,10 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32228.343
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BibliotecaCustomControls", "CustomControls\BibliotecaCustomControls.csproj", "{C562A95D-444E-4B92-BBCA-E186F317CC54}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BibliotecaDeClase", "bibliotecadeclase\BibliotecaDeClase.csproj", "{015837A6-6B96-462E-97E8-95BD53B0E5D7}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormularioPrincipal", "FormularioPrincipal\FormularioPrincipal.csproj", "{33B8B458-9699-4894-884A-AF256D6B779F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bdcwf", "bdcwf\bdcwf.csproj", "{08C601A1-1F49-454C-B0CB-3B25428A197C}"
@@ -19,14 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C562A95D-444E-4B92-BBCA-E186F317CC54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C562A95D-444E-4B92-BBCA-E186F317CC54}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C562A95D-444E-4B92-BBCA-E186F317CC54}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C562A95D-444E-4B92-BBCA-E186F317CC54}.Release|Any CPU.Build.0 = Release|Any CPU
-		{015837A6-6B96-462E-97E8-95BD53B0E5D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{015837A6-6B96-462E-97E8-95BD53B0E5D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{015837A6-6B96-462E-97E8-95BD53B0E5D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{015837A6-6B96-462E-97E8-95BD53B0E5D7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{33B8B458-9699-4894-884A-AF256D6B779F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{33B8B458-9699-4894-884A-AF256D6B779F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33B8B458-9699-4894-884A-AF256D6B779F}.Release|Any CPU.ActiveCfg = Release|Any CPU
